@@ -16,17 +16,10 @@ void print(int k, int i)
 
 void f(int n,int k)
 {
-	if (n == k)
-	{
-		//print(k, 0);
-		return;
-	}
+	if (n == k) return;
 	print(k, 0);
 	return f(n, k + 1);
 }
-
-
-
 
 
 int main()
